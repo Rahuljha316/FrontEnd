@@ -1,9 +1,34 @@
+import axios from 'axios';
 import React,{ useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Login(){
 
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
+
+    const navigate = useNavigate()
+
+    const handleLoginClick = async()=>{
+
+        
+        try{
+           
+            const data = await axios.post('http://localhost:4000/profile/signIn',{
+                email,password
+            });
+            console.log(data);   
+            navigate('/home')         
+        }
+        catch(error){
+            console.log('catch');
+            alert('username or password incorrect')
+        }
+    }
+    const registerButtonClick = () =>{
+        navigate('/')
+
+    }
 
 
     return(
@@ -24,11 +49,11 @@ function Login(){
                     onChange={(event)=>setPassword(event.target.value)}
                     
                     />
-                <button>Login</button>
+                <button onClick={handleLoginClick}>Login</button>
                 <br />
                 <p>OR</p>
                 <button>SignUp With Google</button>
-                <button>register</button>
+                <button onClick={registerButtonClick}>register</button>
             </div>
 
         </div>

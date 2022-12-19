@@ -1,14 +1,32 @@
+import axios from 'axios';
 import React,{useState} from 'react'
 
 function RegisterPage (){
 
+    const [username,setUsername] = useState('')
+    const [name,setName] = useState('')
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
     const [confirmPassword,setconfirmPassword] = useState('');
 
+    
 
     return(
         <div>
+            <input 
+                    className="username" 
+                    type="username"  
+                    placeholder="Enter username"
+                    value={username} 
+                    onChange={(event)=> setUsername(event.target.value)} 
+                />
+            <input 
+                    className="name" 
+                    type="name"  
+                    placeholder="Enter name"
+                    value={name} 
+                    onChange={(event)=> setName(event.target.value)} 
+                />
             <input 
                     className="email" 
                     type="email"  
