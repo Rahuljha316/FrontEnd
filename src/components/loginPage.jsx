@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React,{ useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import '../css/loginPage.css'
 
 function Login(){
 
@@ -21,12 +22,11 @@ function Login(){
             navigate('/home')         
         }
         catch(error){
-            console.log('catch');
             alert('username or password incorrect')
         }
     }
     const registerButtonClick = () =>{
-        navigate('/')
+        navigate('/Register')
 
     }
 
@@ -34,13 +34,15 @@ function Login(){
     return(
 
         <div className="container">
-            <div>
+            <div className='container1'>
+            <h1>Instagram</h1>
                 <input 
                     className="email" 
                     type="email"  
                     placeholder="Enter email"
                     value={email} 
                     onChange={(event)=> setEmail(event.target.value)} />
+                <br />
                 <input 
                     className="password" 
                     type="password"  
@@ -49,12 +51,21 @@ function Login(){
                     onChange={(event)=>setPassword(event.target.value)}
                     
                     />
-                <button onClick={handleLoginClick}>Login</button>
+                <br />
+                <button className='loginButton' onClick={handleLoginClick}>Login</button>
                 <br />
                 <p>OR</p>
                 <button>SignUp With Google</button>
-                <button onClick={registerButtonClick}>register</button>
+
+
             </div>
+               
+                <br />
+
+                <div className='container2'>Don't have an account?<button className='registerButton' onClick={registerButtonClick}>Register</button>
+                </div>
+                
+            
 
         </div>
     )

@@ -5,6 +5,7 @@ import { Routes,Route } from 'react-router-dom';
 // import { Home } from '@mui/icons-material';
 import Home from './components/home'
 import Login from './components/loginPage';
+import RegisterPage from './components/registerPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<NavBar/>}/>
         <Route path='/Home' element={<Home/>}/>
         <Route path='/Login' element={<Login/>}/>
+        <Route path='/Register' element={<RegisterPage/>}/>
       </Routes>
       
     </div>

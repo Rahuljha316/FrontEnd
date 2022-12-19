@@ -3,11 +3,19 @@ import React,{useState} from 'react'
 
 function RegisterPage (){
 
+    
     const [username,setUsername] = useState('')
     const [name,setName] = useState('')
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
     const [confirmPassword,setconfirmPassword] = useState('');
+
+    const handleCreateAccountButtonClick = async() =>{
+        const data = await axios.post('http://localhost:4000/profile/',{
+            name,username,email, password
+        })
+
+    }
 
     
 
@@ -53,7 +61,7 @@ function RegisterPage (){
                     
                 />
 
-            <button>Create Account</button>
+            <button onClick={handleCreateAccountButtonClick}>Create Account</button>
 
         </div>
     )
