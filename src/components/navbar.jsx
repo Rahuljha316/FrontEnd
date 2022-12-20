@@ -11,6 +11,7 @@ const NavBar = () =>{
       <input type="text" name="Search" placeholder="Search"/>
       <Link to='/Home'><HomeIcon /></Link>
       <button><Link to='/Login'>Login</Link></button>
+      <button><Link to='/Register'>Register</Link></button>
       {/* <Link to='/Home'>Home</Link>
       <Link to='/Home'>Home</Link> */}
       {/* <a></a>

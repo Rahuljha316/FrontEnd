@@ -1,7 +1,11 @@
 import axios from 'axios';
 import React,{useState} from 'react'
+import { useNavigate } from 'react-router-dom';
+
+
 
 function RegisterPage (){
+
 
     
     const [username,setUsername] = useState('')
@@ -10,10 +14,18 @@ function RegisterPage (){
     const [password,setPassword] = useState('');
     const [confirmPassword,setconfirmPassword] = useState('');
 
+    const navigate = useNavigate()
+
     const handleCreateAccountButtonClick = async() =>{
+
+        if(password !==confirmPassword) alert('password and confirmpassword are not same')
+
+
         const data = await axios.post('http://localhost:4000/profile/',{
             name,username,email, password
-        })
+        });
+        
+        navigate('/')
 
     }
 

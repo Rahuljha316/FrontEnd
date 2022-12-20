@@ -1,17 +1,25 @@
 .container1{
-    
-    margin: 40px 500px 5px;
+    resize: both;
+    margin: 40px 37vw 5px;
     padding: 40px 40px;
     border: 1px solid rgba(0, 0, 0, 0.349);
 }
 .container2{
-    
-    margin: 5px 500px 5px;
+    resize: both;
+    margin: 5px 37vw 5px;
     padding: 20px 40px;
     border: 1px solid rgba(0, 0, 0, 0.349);
 }
 
-input{
+.email{
+    width: 90%;
+    height: 30px;
+    margin-bottom: 4px;
+    border-radius: 0.2rem;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.801);
+}
+.password{
     width: 90%;
     height: 30px;
     margin-bottom: 4px;
