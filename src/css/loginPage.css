@@ -1,40 +1,44 @@
 .container1{
-    resize: both;
+    display: flex;
+    flex-direction: column;
+    /* resize: both; */
     margin: 40px 37vw 5px;
-    padding: 40px 40px;
+    padding: 15px 40px;
     border: 1px solid rgba(0, 0, 0, 0.349);
 }
 .container2{
-    resize: both;
+    display: flex;
+    /* flex-direction: column; */
     margin: 5px 37vw 5px;
     padding: 20px 40px;
     border: 1px solid rgba(0, 0, 0, 0.349);
 }
 
-.email{
+/* #email{
     width: 90%;
     height: 30px;
-    margin-bottom: 4px;
+   
     border-radius: 0.2rem;
     border-width: 1px;
     border-color: rgba(128, 128, 128, 0.801);
 }
-.password{
+#password{
+    
     width: 90%;
     height: 30px;
-    margin-bottom: 4px;
+    
     border-radius: 0.2rem;
     border-width: 1px;
     border-color: rgba(128, 128, 128, 0.801);
-}
+} */
 
 .loginButton{
     width: 93%;
     height: 28px;
-    margin: 10px;
+    margin: 2px;
     background-color: rgba(135, 182, 235, 0.897);
     border: 0px;
-    border-radius: 0.2rem;
+    border-radius: 0.6rem;
     color: white;
     text-size-adjust: 500%;
 }

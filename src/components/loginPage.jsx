@@ -38,13 +38,15 @@ function Login(){
             <h1>Instagram</h1>
                 <input 
                     className="email" 
+                    id="email"
                     type="email"  
-                    placeholder="Enter email"
+                    placeholder="Enter email or username"
                     value={email} 
                     onChange={(event)=> setEmail(event.target.value)} />
                 <br />
                 <input 
                     className="password" 
+                    id="password"
                     type="password"  
                     placeholder="Enter password"
                     value={password}
@@ -55,7 +57,7 @@ function Login(){
                 <button className='loginButton' onClick={handleLoginClick}>Login</button>
                 <br />
                 <p>OR</p>
-                <button>SignUp With Google</button>
+                <button id="signUp">SignUp With Google</button>
 
 
             </div>
