@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    /* flex-direction: column; */
+    margin: 10px;
+    padding: 5px;
+}
+
+.title{
+    margin-left: 7vw;
+    margin-right: 20vw;
+}
+
+
+.search{
+    margin: 30px 10vw 0  0;
+    /* margin: 3px 4px; */
+    padding-left: 7px;
+    width: 30vw;
+    height: 25px;
+    border-radius: 2rem;
+    text-align: left;
+
+
+}
+.home{
+    margin: 30px;
+}
+
+.Btn{
+    margin: 30px;
+    height: 35px;
+    width: 70px;
+    border-radius: 0.7rem;
+    color: white;
+    /* text-decoration: none; */
+    
+
+    background-color: rgba(0, 81, 255, 0.418);
+}
+
+.btnn{
+    text-decoration: none;
+    color: white;
+}

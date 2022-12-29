@@ -14,6 +14,13 @@
     border: 1px solid rgba(0, 0, 0, 0.349);
 }
 
+.email1{
+    margin: 5px;
+}
+.password1{
+    margin: 5px;
+}
+
 /* #email{
     width: 90%;
     height: 30px;
@@ -35,14 +42,36 @@
 .loginButton{
     width: 93%;
     height: 28px;
-    margin: 2px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     background-color: rgba(135, 182, 235, 0.897);
     border: 0px;
     border-radius: 0.6rem;
     color: white;
     text-size-adjust: 500%;
 }
+fieldset{
+    height: .2px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    
+}
+
+legend { 
+    display: flex;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+.signUp{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* padding: 5px; */
+}
 .registerButton{
+    
     color: rgba(0, 102, 255, 0.719);
     background-color: white;
     border: 0px;

@@ -11,7 +11,6 @@ function Login(){
     const navigate = useNavigate()
 
     const handleLoginClick = async()=>{
-
         
         try{
            
@@ -37,15 +36,15 @@ function Login(){
             <div className='container1'>
             <h1>Instagram</h1>
                 <input 
-                    className="email" 
+                    className="email1" 
                     id="email"
                     type="email"  
                     placeholder="Enter email or username"
                     value={email} 
                     onChange={(event)=> setEmail(event.target.value)} />
-                <br />
+                
                 <input 
-                    className="password" 
+                    className="password1" 
                     id="password"
                     type="password"  
                     placeholder="Enter password"
@@ -53,11 +52,15 @@ function Login(){
                     onChange={(event)=>setPassword(event.target.value)}
                     
                     />
-                <br />
+                
                 <button className='loginButton' onClick={handleLoginClick}>Login</button>
-                <br />
-                <p>OR</p>
-                <button id="signUp">SignUp With Google</button>
+                 
+                <fieldset>
+                <legend>OR</legend>
+
+                </fieldset>
+                
+                <button className="signUp">SignUp With Google</button>
 
 
             </div>
