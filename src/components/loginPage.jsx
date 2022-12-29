@@ -18,7 +18,7 @@ function Login(){
                 email,password
             });
             console.log(data);   
-            navigate('/home')         
+            navigate('/home'  )         
         }
         catch(error){
             alert('username or password incorrect')

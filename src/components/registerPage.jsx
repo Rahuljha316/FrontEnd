@@ -25,7 +25,7 @@ function RegisterPage (){
             name,username,email, password
         });
         
-        navigate('/')
+        navigate('/');
 
     }
 
