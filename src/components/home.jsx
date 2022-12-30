@@ -2,11 +2,17 @@ import CenteredTabs from "./tab";
 import '../css/home.css'
 
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
+import axios from "axios";
+import FadeMenu from "./settingMenu";
 
 
 const Home = () =>{
 
-    const handlePostClick = () => {
+
+
+    const handlePostClick = async() => {
+
+        const data = await axios.post()
 
     }
 
@@ -18,8 +24,8 @@ const Home = () =>{
     
     }
 
-    
 
+    
     return(
         <div className="Post">
             <div className="header">
@@ -27,14 +33,9 @@ const Home = () =>{
                 <div onClick={handleFollowingClick} >following</div>
                 <div onClick={handleFollowersClick} >followers</div>
 
-
             </div>
-            
+            <div><FadeMenu /></div>
 
-            <div><SettingsApplicationsIcon/></div>
-
-
-            
             <CenteredTabs />
 
         </div>
