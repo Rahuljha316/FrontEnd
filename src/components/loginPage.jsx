@@ -16,8 +16,9 @@ function Login(){
            
             const data = await axios.post('http://localhost:4000/profile/signIn',{
                 email,password
-            });
-            console.log(data);   
+            });   
+
+            localStorage.setItem('token', data.data.token)
             navigate('/home'  )         
         }
         catch(error){

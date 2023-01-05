@@ -14,11 +14,6 @@ const NavBar = () =>{
       <div className="home"><Link to='/Home'><HomeIcon /></Link></div>
       <button className="Btn"><Link to='/Login' className="btnn" >Login</Link></button>
       <button className="Btn" ><Link to='/Register' className="btnn" >Register</Link></button>
-      {/* <Link to='/Home'>Home</Link>
-      <Link to='/Home'>Home</Link> */}
-      {/* <a></a>
-      <a></a> */}
-
     </div>
   )
 }
